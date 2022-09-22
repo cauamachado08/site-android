@@ -1,64 +1,79 @@
 @charsetUTF-8;
 
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+    color: #538C60;
+    border: none;
+}
+h1{
+    color: #33A63B;
+}
 body{
-    background-color: #010102;
-}
-
-
-
-header> H1 {
-   background-image: url(midia/Logo-IFRJ_EaD_horizontal_v2_800x179.png);
-    color: rgb(54, 235, 8);
-    border-radius: 50px;
-   box-shadow: 5px 5px 15px rgb(167, 224, 167);
-   width: 600;
-   padding: 70px;
-   margin: auto;
-   text-align: center;
-font-family: Arial, Helvetica, sans-serif;
-
-
-}
-main> div {text-align: left;
-
-}
-
-main{
-   
-    color: rgb(60, 231, 7);
-    border-radius:;
-   box-shadow: 
-   width: 600;
-   padding: 10px;
-   margin: auto;
-   
-font-family: Arial, Helvetica, sans-serif;
-
+    background-image: url("midia/images.jfif");
+    background-size: cover;
+    background-position-y: -200px;
     
 }
-h3{
-    text-align: center;
-  color: rgb(241, 8, 0);
-  font-family: Arial, Helvetica, sans-serif;
+textarea, input, input:focus{
+    outline: none;
 }
-nav{
-    text-align: center;
-    
-   
+a, label {
+    font-size: .8rem;
 }
-div:hover {color: rgb(35, 189, 50)  ;
-    text-decoration:  underline;
-  
+a:hover{
+    color:#08558B ;
+}
 
+/*  container login */
+
+#login-container{
+    background-color: #FFF;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
 }
-div >p{
-    display: none;
+/* formulario */
+form{
+    margin-top: 30px;
+    margin-bottom:  40px;
 }
-div:hover >p{
+label, input {
+    display: block ;
+    width: 100%;
+      text-align: left;
+}
+label{font-weight: bold;}
+
+input{
+    border-bottom:  2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px ;
+}
+input:focus{
+    border-bottom: 2px solid #08558B;
+}
+#forgot-pass {
+    text-align: right;
     display: block;
-    color: rgb(15, 10, 10);
 }
 
-
-
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #fff;
+    background-color:  #08558B;
+    cursor: pointer;
+}
