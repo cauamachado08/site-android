@@ -5,6 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <style>
+        
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+    color: #538C60;
+    border: none;
+}
+h1{
+    color: #33A63B;
+}
+body{
+  background-image: url();
+    background-size: cover;
+    background-position-y: -200px;
+    
+}
+textarea, input, input:focus{
+    outline: none;
+}
+a, label {
+    font-size: .8rem;
+}
+a:hover{
+    color:#08558B ;
+}
+
+/*  container login */
+
+#login-container{
+    background-color: #FFF;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+}
+/* formulario */
+form{
+    margin-top: 30px;
+    margin-bottom:  40px;
+}
+label, input {
+    display: block ;
+    width: 100%;
+      text-align: left;
+}
+label{font-weight: bold;}
+
+input{
+    border-bottom:  2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px ;
+}
+input:focus{
+    border-bottom: 2px solid #08558B;
+}
+#forgot-pass {
+    text-align: right;
+    display: block;
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #fff;
+    background-color:  #08558B;
+    cursor: pointer;
+}
+
+    </style>
 </head>
 <body>
 <div id="login-container" > 
@@ -12,6 +94,15 @@
     <form action=""></form>
     <label for="Email">Email</label>
     <input type="Email" name="Email" id="Emal"placehlonder="digite seu E-gmail" autocomplete="off" >
+    <label for="Password">Senha</label>
+    <input type="Password" name="Password" id="Password" placeholder="Digite sua senha" >
+    <a href="#"  id="forgot-pass" >Esqueceu a senha?</a> 
+           <input type="submit" value="login" >
+       </form>
+   <div id="registre-contsiner" > 
+       <p>Registre-se aqui.</p>
+<a href="#">Registrar</a>
+
 </div>
 
 
